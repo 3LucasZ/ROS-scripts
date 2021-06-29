@@ -1,4 +1,6 @@
 #! /usr/bin/env python
+
+#Libraries and message types used
 import rospy
 import time
 from std_msgs.msg import String

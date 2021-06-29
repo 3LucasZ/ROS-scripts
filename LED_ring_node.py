@@ -1,4 +1,11 @@
 #! /usr/bin/env python
+'''
+Turning an LED ring on and off
+this relies on: 
+    colorSetTrial.py
+    colorDeleteTrial.py
+so please carefully edit these before using this
+'''
 import rospy
 import RPi.GPIO as GPIO
 import time
@@ -11,9 +18,9 @@ def callback_ringLED_toggle(msg):
         global ringLEDstatus
         ringLEDstatus = 1 - ringLEDstatus
         if(ringLEDstatus == 1):
-            os.system("sudo python3 /home/ubuntu/catkin_ws/src/roboquest/src/colorSetTrial.py ")
+            os.system("sudo python3 /home/ubuntu/catkin_ws/src/roboquest/src/LED_ring_set_color.py")
         else:
-            os.system("sudo python3 /home/ubuntu/catkin_ws/src/roboquest/src/colorDeleteTrial.py ")
+            os.system("sudo python3 /home/ubuntu/catkin_ws/src/roboquest/src/LED_ring_remove_color.py")
 
 ringLEDstatus = 0
 
