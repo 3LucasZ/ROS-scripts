@@ -23,4 +23,6 @@ There are certain components required:
   A speaker connected to the audio jack and properly configured.
   
   An RGB Led.
+  
+  Still in the process of properly commenting and documenting these. If any questions arise, please post under issues.
 
