@@ -1,0 +1,9 @@
+<launch>
+	<node name="cputemp" pkg="roboquest" type="cputemp.py"  />
+	<node name="pantilt" pkg="roboquest" type="pantilt.py"	/>
+	<!--<node name="ultrasonicROSTrial" pkg="roboquest" type="ultrasonicROStrial.py"/>-->
+	<node name="ringLEDtoggle" pkg="roboquest" type="ringLEDROStrial.py"/>
+	<!--<node name="LEDtoggle" pkg="roboquest" type="GPIO26ROS.py"/>-->
+	<node name="speak_string_node" pkg="roboquest" type="speakerROStrial.py"/>
+	<!--<node name="arm_control_node" pkg="roboquest" type="armROStrial.py"/>-->
+</launch>
