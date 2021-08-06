@@ -1,8 +1,8 @@
 '''
-Simple script for using an RGB LED
-Please change the pins to whichever pins you are using
+Test a RGB LED
+Change the pins
+Python2
 '''
-
 import sys, time
 import RPi.GPIO as GPIO
 redPin   = 19

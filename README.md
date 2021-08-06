@@ -1,28 +1,18 @@
 # ROS-scripts
 
-A repository of some introductory yet useful ROS-scripts.
+Written and tested for:
+- Raspberry pi4 (Ubuntu)
+- ROS Kinetic
+- some use Python2, some use Python3
 
-A couple of these are regular programs, and not associated with ROS. They are just for testing particular components. 
+Components required:
+- Ultrasonic sensor
+- ws2812 LED ring (from NeoPixel)
+- Speaker
+- RGB LED
+- Servos
 
-They are primarily written in Python2, although a couple in Python3.
-
-This has been written and tested for:
-
-  Raspberry pi4 with Ubuntu
-
-  ROS Kinetic
-
-There are certain components required:
-
-  An ultrasonic sensor, attached to a servo.
-  
-  The ws2812 LED ring from NeoPixel.
-  
-  (Also install the library for using this module.)
-    
-  A speaker connected to the audio jack and properly configured.
-  
-  An RGB Led.
-  
-  Still in the process of properly commenting and documenting these. If any questions arise, please post under issues.
-
+Contents:
+- Unit Testing different electrical components before integrating ROS
+- ROS Nodes to pub/sub different component data
+- roboquest.launch file
